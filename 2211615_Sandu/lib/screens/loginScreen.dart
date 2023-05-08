@@ -53,7 +53,8 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
                 SignUpSquare(iconPath: "assets/icons/google.svg"),
-                SignUpSquare(iconPath: "assets/icons/facebook.svg"),
+                //!can't pass icon path params well
+                // SignUpSquare(iconPath: "assets/icons/facebook.svg"),
                 //SignUpSquare(),
               ],
             ),

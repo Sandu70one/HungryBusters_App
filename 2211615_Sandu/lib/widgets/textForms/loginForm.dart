@@ -30,8 +30,8 @@ class _LoginFormState extends State<LoginForm> {
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             //!email form field
-            _usernam(),
-//! //////////////////////////////////
+            _username(),
+
             const SizedBox(
               height: 2.0,
             ),
@@ -103,7 +103,7 @@ class _LoginFormState extends State<LoginForm> {
     );
   }
 
-  Widget _usernam() {
+  Widget _username() {
     return (TextFormField(
       controller: _emailController,
       decoration: const InputDecoration(

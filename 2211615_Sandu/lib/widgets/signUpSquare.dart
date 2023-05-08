@@ -7,7 +7,7 @@ class SignUpSquare extends StatefulWidget {
     super.key,
     required this.iconPath,
   });
-  
+
   @override
   State<SignUpSquare> createState() => _SignUpSquareState();
 }
@@ -16,34 +16,23 @@ class _SignUpSquareState extends State<SignUpSquare> {
   @override
   // String pp = $iconPath;
   Widget build(BuildContext context) {
+    //!can't pass icon path params well
     return Row(children: [
-      Container(
-          child: 
-            SvgPicture.asset(
-              "assets/icons/google.svg",
-              height: 33,
-              width: 33,
-            ),
-        )
-    ]
-      );
-      // Image.asset(
-      //   "assets/images/google.png",
-      //   height: 25,
-      //   width: 25,
-      // ),
-      // const SizedBox(
-      //   width: 25,
-      // ),
-      // Image.asset(
-      //   "assets/images/facebook.png",
-      //   height: 33,
-      //   width: 33,
-      // ),
-
-      
-    // ]);
+      Image.asset(
+        "assets/images/google.png",
+        height: 25,
+        width: 25,
+      ),
+      const SizedBox(
+        width: 25,
+      ),
+      Image.asset(
+        "assets/images/facebook.png",
+        height: 33,
+        width: 33,
+      ),
+    ]);
   }
 }
 
-//!can't pass icon path params well
+
