@@ -27,13 +27,13 @@ class _LoginScreenState extends State<LoginScreen> {
           //in SizedBox their's no decoration property like container
 
           Container(
-            margin: EdgeInsets.only(top: 40),
-            height: deviceHeight * 0.35,
+            margin: const EdgeInsets.only(top: 40),
             color: Colors.white,
-            child: const FittedBox(
-              child: Image(
-                image: AssetImage('assets/images/hungry.png'),
-              ),
+            height: deviceHeight * 0.35,
+            child: Image.asset(
+              'assets/images/hungry.png',
+              height: deviceHeight * 0.35,
+              fit: BoxFit.cover,
             ),
           ),
 
@@ -52,7 +52,7 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
-                SignUpSquare( iconPath: "assets/icons/google.svg"),
+                SignUpSquare(iconPath: "assets/icons/google.svg"),
                 SignUpSquare(iconPath: "assets/icons/facebook.svg"),
                 //SignUpSquare(),
               ],
